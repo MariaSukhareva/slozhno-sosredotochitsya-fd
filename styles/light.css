@@ -10,11 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --bg-color: #FFF1F7;
-  --cover-title-color: #FFC2E6;
+  --bg-color: #fff1f7;
+  --cover-title-color: #ffc2e6;
   --title-color: #353430;
   --text-color: #353430;
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --bg-image: url(../images/cover-image-light.png);
 }
 
@@ -31,7 +31,17 @@
   color: var(--title-color, #353430);
 }
 
+.theme-light .decorated-zone::before {
+  border-top: 1px solid var(--title-color, #353430);
+  border-right: 1px solid var(--title-color, #353430);
+}
+
+.theme-light .decorated-zone::after {
+  border-bottom: 1px solid var(--title-color, #353430);
+  border-left: 1px solid var(--title-color, #353430);
+}
+
 .theme-light .header__theme-menu-button:hover {
   border: 1px solid
-    color-mix(in oklab,  var(--title-color, #353430) 40%, transparent);
+    color-mix(in oklab, var(--title-color, #353430) 40%, transparent);
 }
