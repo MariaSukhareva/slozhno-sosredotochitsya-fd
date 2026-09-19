@@ -331,7 +331,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-auto {
+  :root {
     --bg-color: #fff1f7;
     --cover-title-color: #ffc2e6;
     --title-color: #353430;
@@ -340,30 +340,30 @@
     --bg-image: url(../images/cover-image-light.png);
   }
 
-  .theme-auto .content-header,
-  .theme-auto .section__header {
+  .content-header,
+  .section__header {
     color: var(--title-color, #353430);
   }
 
-  .theme-auto .light-bulb {
+  .light-bulb {
     display: none;
   }
 
-  .theme-auto .decorated-zone::before {
+  .decorated-zone::before {
     border-top: 1px solid var(--title-color, #353430);
     border-right: 1px solid var(--title-color, #353430);
   }
 
-  .theme-auto .decorated-zone::after {
+  .decorated-zone::after {
     border-bottom: 1px solid var(--title-color, #353430);
     border-left: 1px solid var(--title-color, #353430);
   }
 
-  .theme-auto .header__theme-menu-button {
+  .header__theme-menu-button {
     color: var(--title-color, #353430);
   }
 
-  .theme-auto .header__theme-menu-button:hover {
+  .header__theme-menu-button:hover {
     border: 1px solid
       color-mix(in oklab, var(--title-color, #353430) 40%, transparent);
   }
