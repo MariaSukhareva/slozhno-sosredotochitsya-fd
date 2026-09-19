@@ -14,33 +14,10 @@
   --title-color: #000028;
   --text-color: #f1b2ce;
   --accent-color: #ff0070;
+  --text-accent-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
-}
-
-.theme-dark .content-header,
-.theme-dark .section__header {
-  color: var(--accent-color, #ff0070);
 }
 
 .theme-dark .light-bulb {
   display: block;
-}
-
-.theme-dark .header__theme-menu-button {
-  color: var(--accent-color, #ff0070);
-}
-
-.theme-dark .decorated-zone::before {
-  border-top: 1px solid var(--accent-color, #ff0070);
-  border-right: 1px solid var(--accent-color, #ff0070);
-}
-
-.theme-dark .decorated-zone::after {
-  border-bottom: 1px solid var(--accent-color, #ff0070);
-  border-left: 1px solid var(--accent-color, #ff0070);
-}
-
-.theme-dark .header__theme-menu-button:hover {
-  border: 1px solid
-    color-mix(in oklab, var(--accent-color, #ff0070) 40%, transparent);
 }
